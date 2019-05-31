@@ -11,4 +11,15 @@ public class Controller {
         this.model = model;
         this.view = view;
     }
+
+    public void processTasks() {
+        view.printMessage("First task");
+        model.task1();
+
+        view.printMessage("Second task");
+        model.task2();
+
+        view.printMessage("Third task");
+        model.task3();
+    }
 }
